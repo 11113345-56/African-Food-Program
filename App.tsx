@@ -7,6 +7,7 @@ import { StatusBar } from "expo-status-bar";
 import SplashScreen from "./screens/SplashScreen";
 import AuthScreen from "./screens/AuthScreen";
 import FarmerDashboard from "./screens/FarmerDashboard";
+import TraderDashboard from "./screens/TraderDashboard"; // ✅ ADDED
 import UploadHarvest from "./screens/UploadHarvest";
 import Notifications from "./screens/Notifications";
 import Cashier from "./screens/Cashier";
@@ -15,6 +16,7 @@ export type RootStackParamList = {
   Splash: undefined;
   Auth: undefined;
   FarmerDashboard: undefined;
+  TraderDashboard: undefined; // ✅ ADDED
   UploadHarvest: undefined;
   Notifications: undefined;
   Cashier: undefined;
@@ -30,6 +32,7 @@ export default function App() {
         <Stack.Screen name="Splash" component={SplashScreen} />
         <Stack.Screen name="Auth" component={AuthScreen} />
         <Stack.Screen name="FarmerDashboard" component={FarmerDashboard} />
+        <Stack.Screen name="TraderDashboard" component={TraderDashboard} /> 
         <Stack.Screen name="UploadHarvest" component={UploadHarvest} />
         <Stack.Screen name="Notifications" component={Notifications} />
         <Stack.Screen name="Cashier" component={Cashier} />
